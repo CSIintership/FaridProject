@@ -42,6 +42,18 @@ class First_controller extends CI_Controller {
 		$data['content']='register';
         $this->load->view('home',$data);
 	}
+
+// side bar menu User *****************************************
+	public function groupadmin()
+	{
+		$data['content']='groupadmin';
+		$this->load->view('home',$data);
+	}
+	public function groupuser()
+	{
+		$data['content']='groupuser';
+		$this->load->view('home',$data);
+	}
 	
 // side bar menu Post *****************************************
 public function allposts()

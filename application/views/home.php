@@ -157,7 +157,7 @@
         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-users"></i> <span>User</span>
+            <i class="fa fa-user"></i> <span>User</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -165,6 +165,19 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url('First_controller/member') ?>"><i class="fa fa-circle-o"></i> Member</a></li>
             <li><a href="<?php echo base_url('First_controller/register') ?>"><i class="fa fa-circle-o"></i> Register</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-users"></i> <span>User Group</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('First_controller/groupadmin') ?>"><i class="fa fa-circle-o"></i> Admin</a></li>
+            <li><a href="<?php echo base_url('First_controller/groupuser') ?>"><i class="fa fa-circle-o"></i> User</a></li>
           </ul>
         </li>
 
@@ -401,7 +414,7 @@
 *****************************************-->
        
         <li class="header">FORUM</li>
-        <li><a href="https://github.com/CSIintership/FaridProject" target="_blank"><i class="fa fa-github"></i> <span>Github</span></a></li>
+        <li><a href="https://github.com/CSIintership/FaridProject/tree/sukitacj" target="_blank"><i class="fa fa-github"></i> <span>Github</span></a></li>
         
 <!--***************************************** widgets nggak dipake
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
