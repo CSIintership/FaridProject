@@ -34,77 +34,77 @@ class First_controller extends CI_Controller {
 // side bar menu User *****************************************
 	public function member()
     {
-		$data['content']='member';
+		$data['content']='user/member';
         $this->load->view('home',$data);
 	}
 	public function register()
     {
-		$data['content']='register';
+		$data['content']='user/register';
         $this->load->view('home',$data);
 	}
 
 // side bar menu User *****************************************
 	public function groupadmin()
 	{
-		$data['content']='groupadmin';
+		$data['content']='usergroup/groupadmin';
 		$this->load->view('home',$data);
 	}
 	public function groupuser()
 	{
-		$data['content']='groupuser';
+		$data['content']='usergroup/groupuser';
 		$this->load->view('home',$data);
 	}
 	
 // side bar menu Post *****************************************
 public function allposts()
 {
-	$data['content']='allposts';
+	$data['content']='post/allposts';
 	$this->load->view('home',$data);
 }
 public function categories()
 {
-	$data['content']='categories';
+	$data['content']='post/categories';
 	$this->load->view('home',$data);
 }
 public function addpost()
 {
-	$data['content']='addpost';
+	$data['content']='post/addpost';
 	$this->load->view('home',$data);
 }
 
 // side bar menu Media *****************************************
 public function library()
 {
-	$data['content']='library';
+	$data['content']='media/library';
 	$this->load->view('home',$data);
 }
 public function addmedia()
 {
-	$data['content']='addmedia';
+	$data['content']='media/addmedia';
 	$this->load->view('home',$data);
 }
 
 // side bar menu Page *****************************************
 public function allpages()
 {
-	$data['content']='allpages';
+	$data['content']='page/allpages';
 	$this->load->view('home',$data);
 }
 public function addpage()
 {
-	$data['content']='addpage';
+	$data['content']='page/addpage';
 	$this->load->view('home',$data);
 }
 
 // side bar menu Comment *****************************************
 public function allcomments()
 {
-	$data['content']='allcomments';
+	$data['content']='comment/allcomments';
 	$this->load->view('home',$data);
 }
 public function addcomment()
 {
-	$data['content']='addcomment';
+	$data['content']='comment/addcomment';
 	$this->load->view('home',$data);
 }
 

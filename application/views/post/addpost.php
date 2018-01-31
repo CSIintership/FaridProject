@@ -3,12 +3,12 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-    Add New
+    Add Post
     <!-- <small>Security Organization</small> -->
     </h1>
     <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-home"></i> Post</a></li>
-    <li><a href="#">Add New</a></li>
+    <li><a href="#">Add Post</a></li>
     <!-- <li class="active">Blank page</li> -->
     </ol>
 </section>

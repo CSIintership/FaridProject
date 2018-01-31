@@ -41,8 +41,9 @@
     <p class="login-box-msg">Enter Username and Password</p>
 
     <form action="<?php echo base_url() ?>Login_controller/loginaction" method="post">
+
       <div class="form-group has-feedback">
-        <input type="username" name="username" class="form-control" placeholder="Username" required autofocus>
+        <input type="username" name="username" class="form-control" placeholder="Username" autocomplete="off" required autofocus>
         <span class="fa fa-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -63,6 +64,7 @@
         </div>
         <!-- /.col -->
       </div>
+
     </form>
 
     <!-- <div class="social-auth-links text-center">
@@ -89,6 +91,7 @@
 <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- iCheck -->
 <script src="assets/plugins/iCheck/icheck.min.js"></script>
+
 <script>
   $(function () {
     $('input').iCheck({
