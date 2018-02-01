@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2018 at 01:04 PM
+-- Generation Time: Feb 01, 2018 at 07:49 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sukitacj`
+-- Database: `goleknoc_sukitacj`
 --
 
 -- --------------------------------------------------------
@@ -32,15 +32,17 @@ CREATE TABLE `table_login` (
   `id` int(10) NOT NULL,
   `name` varchar(50) NOT NULL,
   `username` varchar(20) NOT NULL,
-  `password` varchar(50) DEFAULT NULL
+  `password` varchar(50) DEFAULT NULL,
+  `group` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `table_login`
 --
 
-INSERT INTO `table_login` (`id`, `name`, `username`, `password`) VALUES
-(1, 'admin', 'admin', '7dd66913004434da295aefa937f55c8e');
+INSERT INTO `table_login` (`id`, `name`, `username`, `password`, `group`) VALUES
+(1, 'admin', 'admin', '7dd66913004434da295aefa937f55c8e', 'admin'),
+(2, 'faisal', 'xilem', '7d277070124ba1400345007de3c49c6a', 'user');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +62,7 @@ ALTER TABLE `table_login`
 -- AUTO_INCREMENT for table `table_login`
 --
 ALTER TABLE `table_login`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
