@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class model extends CI_Model {
+class Model extends CI_Model {
     public function select($table)
     {
         return $this->db->get($table);
