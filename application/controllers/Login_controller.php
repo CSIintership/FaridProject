@@ -7,7 +7,7 @@ class Login_controller extends CI_Controller {
     {        
         $u=$this->input->post('username');
         $p=$this->input->post('password');
-        $this->mymodel->login($u,$p);
+        $this->Model->login($u,$p);
     }
     public function logout()
     {
